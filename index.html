@@ -48,10 +48,15 @@
         console.log(mbsy)
         mbsy.on('formSubmit', async function(event, properties){
             console.log(event, '<--- the event', properties, '<--- properties')
-            const {email} = properties;
+            const {email1} = properties;
             try {
-                mbsy.identify({email});
+                console.log('1')
+                mbsy.identify({email: email1});
+                console.log('2')
+
                 mbsy.track()
+                console.log('3')
+
             } catch (e) {
                 console.error(e)
             }
