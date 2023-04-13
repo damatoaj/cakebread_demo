@@ -46,8 +46,12 @@
     </footer>
     <script>
         console.log(mbsy)
-        mbsy.on('formSubmit', function(event, properties){
+        mbsy.on('formSubmit', async function(event, properties){
             console.log(event, '<--- the event')
+            const { email } = properties;
+            const params = new URLSearchParams(window.location.href);
+            console.log(params)
+
         })
     </script>
 </body>
