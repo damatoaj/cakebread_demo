@@ -28,6 +28,25 @@ body > header > nav {
     padding-top: 2rem;
 }
 
+section {
+    max-width: 400px;
+    max-height: 500px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    margin-bottom: 30px;
+}
+
+section > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
 footer {
     background-color: #833921;
     color:#fff;
@@ -43,8 +62,20 @@ footer > form {
     max-width: 400px;
 }
 
-footer > ul {
+ul {
     list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem;
+    height: 1000px;
+}
+
+section li {
+    margin-bottom:1.5rem;
 }
 
 input {
@@ -66,6 +97,6 @@ footer li {
     max-height: 400px;
 }
 
-section{
-    min-height:500px;
+.red {
+    color:red;
 }
