@@ -47,15 +47,10 @@
     <script>
         console.log(mbsy)
         mbsy.on('formSubmit', async function(event, properties){
-            console.log(event, '<--- the event')
-            const { email } = properties;
-            console.log(email)
-            try {
-                mbsy.identify({email})
-                mbsy.track({campaign:55590, revenue:0})
-            } catch (error) {
-                console.error(error)
-            }
+            console.log(event, '<--- the event', properties, '<--- properties')
+            const i = document.querySelector('div#welcome_module > input')
+            console.log(i, '<--- i')
+
         })
     </script>
 </body>
