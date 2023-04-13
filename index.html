@@ -49,9 +49,13 @@
         mbsy.on('formSubmit', async function(event, properties){
             console.log(event, '<--- the event')
             const { email } = properties;
-            const params = new URLSearchParams(window.location.href);
-            console.log(params)
-
+            console.log(email)
+            try {
+                mbsy.identify({email})
+                mbsy.track({campaign:55590, revenue:0})
+            } catch (error) {
+                console.error(error)
+            }
         })
     </script>
 </body>
