@@ -64,6 +64,7 @@ footer > form {
 
 ul {
     list-style: none;
+    padding:1rem;
 }
 
 main {
@@ -76,6 +77,14 @@ main {
 
 section li {
     margin-bottom:1.5rem;
+}
+
+section > p, section > span {
+    margin-left:15px;
+}
+
+section > h5 {
+    padding:1rem;
 }
 
 input {

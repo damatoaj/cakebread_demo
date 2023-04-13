@@ -54,7 +54,7 @@
                 <p class="red underline">View</p>
             </header>
             <p><strong>Default Address</strong></p>
-            <p>100 Main Street</p>
+            <p id="street">100 Main Street</p>
             <span id="city">
                 Seattle
             </span>
@@ -100,5 +100,15 @@
             <input type='email' placeholder="Your Email Address" />
         </form>
     </footer>
+    <script type="text/javascript">
+        const first_name = document.getElementById('first_name').innerText;
+        const last_name = document.getElementById('last_name').innerText;
+        const email = document.getElementById('email').innerText;
+        const street = document.getElementById('street').innerText;
+        const city = document.getElementById('city').innerText;
+        const state = document.getElementById('state').innerText;
+        const zip = document.getElementById('zip-code').innerText;
+        
+    </script>
 </body>
 </html>
