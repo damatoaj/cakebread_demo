@@ -4,7 +4,7 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-header {
+body > header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,15 +14,15 @@ header {
     padding-top:15%;
 }
 
-header > h1 {
+body > header > h1 {
     margin-left:1rem;
 }
 
-header a {
+body > header a {
     color: #fff;
 }
 
-header > nav {
+body > header > nav {
     margin-right: 1rem;
     padding: 1rem;
     padding-top: 2rem;
