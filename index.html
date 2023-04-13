@@ -48,8 +48,13 @@
         console.log(mbsy)
         mbsy.on('formSubmit', async function(event, properties){
             console.log(event, '<--- the event', properties, '<--- properties')
-            const i = document.querySelector('div#welcome_module input')
-            console.log(i, '<--- i')
+            const {email} = properties;
+            try {
+                mbsy.identify({email});
+                mbsy.track()
+            } catch (e) {
+                console.error(e)
+            }
 
         })
     </script>
