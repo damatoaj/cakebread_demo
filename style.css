@@ -84,7 +84,12 @@ section > p, section > span {
 }
 
 section > h5 {
-    padding:1rem;
+    padding-left:15px;
+    margin-bottom: 15px
+}
+
+section > p {
+    margin-left:15px;
 }
 
 input {
