@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+    <script>(function (u, n, i, v, e, r, s, a, l) { u[r] = {}; u[r].uid = '25577aea-69db-4509-81dc-b3e44b984447'; u[r].m = ['getReferrerInfo', 'identify', 'integrationsReady', 'on', 'ready', 'track']; u[r].queue = []; u[r].f = function(t) { return function() { var l = Array.prototype.slice.call(arguments); l.unshift(t); u[r].queue.push(l); return u[r].queue; }; }; for (var t = 0; t < u[r].m.length; t++) { l = u[r].m[t]; u[r][l] = u[r].f(l); } a = n.createElement(v); a.src = e + '/us-' + u[r].uid + '.js'; a.async = s; n.getElementsByTagName(i)[0].appendChild(a); })(window, document, 'head', 'script', 'https://cdn.getambassador.com', 'mbsy', true);</script>
+    
+</head>
+<body>
+    <header>
+        <h1>Landing page</h1>
+        <nav>
+            <a href="member_portal.html">Member Portal</a>
+        </nav>
+    </header>
+    <main style="height:800px; width:100vw;padding:0;display:flex; flex-direction: row;">
+        <div style="width:50%">
+            <div style="height:100px"></div>
+            <div style="background:#faf8f7; height: 70%; width: 80%; position:relative; z-index: -10;"></div>
+            <img 
+                src="./Cakebread Cellars/Front_BobMcClenahan.jpg" 
+                alt="cakebread front" 
+                style='position:relative;z-index:10;max-width: 80%;max-height: 70%; top:-60%;left:10%;' 
+            />
+        </div>
+        <div style="width:50%">
+            <div style="height:100px"></div>
+            <h3 class="red">Sustainably Farmed Vineyards</h3>
+            <br>
+            <br>
+            <h1>Remarkable Wines.</h1>
+            <h1>Family Owned.</h1>
+            <br>
+            <br>
+            <br>
+            <p>From our signature Napa Valley Chardonnay to classic Napa Valley Cabernet Sauvignon, experience the passion behind every wine in the Cakebread Cellars collection.</p>
+            <br>
+            <br>
+            <h3>---- EXPLORE OUR WINES</h3>
+            <img 
+                src="./Cakebread Cellars/Suscol Springs Cabernet Sauvignon.jpg" 
+                alt="wine bottle" 
+                style="width: 300px; height:300px; object-fit: none;object-position: right 45%;margin-top:20px;"
+            />
+        </div>
+    </main>
+    <footer>
+        <address>
+            8300 St Helena Hwy,
+            <br>
+            Rutherfor, CA 94573
+            <br>
+            Open Mon-Sun 10AM-4:30PM
+        </address>
+        <ul>
+            <li>Customer Service</li>
+            <li>Accessibility Statement</li>
+            <li>Tasting Policy</li>
+            <li>Privacy Policy</li>
+            <li>Shipping Policy</li>
+            <li>Contact Us</li>
+            <li>Photo Contest</li>
+            <li>Careers</li>
+            <li>Sitemap</li>
+        </ul>
+        <form>
+            <h2>Stay In Touch</h2>
+            <p>Let's be friends. Subscribe to our newsletter to receive updates on new launches, recipes, playlists, and more.</p>
+            <input type='email' placeholder="Your Email Address" />
+        </form>
+    </footer>
+    <script>
+        console.log(mbsy)
+        mbsy.on('formSubmit', async function(event, properties){
+            const {email} = properties;
+            try {
+                console.log('The email: ', email)
+            } catch (e) {
+                console.error(e)
+            }
+        })
+    </script>
+</body>
+</html>

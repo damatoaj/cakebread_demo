@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('Cakebread-DSC_2693.jpg');
+    color: #fff;
+    height: 500px;
+    padding-top:15%;
+}
+
+body > header > h1 {
+    margin-left:1rem;
+}
+
+body > header a {
+    color: #fff;
+}
+
+body > header > nav {
+    margin-right: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+section {
+    max-width: 400px;
+    max-height: 500px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    margin-bottom: 30px;
+}
+
+section > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+footer {
+    background-color: #833921;
+    color:#fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    word-wrap: normal;
+}
+
+footer > form {
+    max-width: 400px;
+}
+
+ul {
+    list-style: none;
+    padding:1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem;
+    height: 1000px;
+}
+
+section li {
+    margin-bottom:1.5rem;
+}
+
+section > p, section > span {
+    margin-left:15px;
+}
+
+section > h5 {
+    padding-left:15px;
+    margin-bottom: 15px
+}
+
+section > p {
+    margin-left:15px;
+}
+
+input {
+    background-color: #833921;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #6c757d;
+    padding: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+
+form > h2 {
+    margin: 10px 0px 10px 0px;
+}
+
+footer li {
+    margin-top: 10px;
+    max-height: 400px;
+}
+
+.red {
+    color:red;
+}
+
+.underline {
+    text-decoration: underline;
+}

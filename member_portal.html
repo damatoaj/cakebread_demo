@@ -4,14 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Member portal</title>
+    <script>(function (u, n, i, v, e, r, s, a, l) { u[r] = {}; u[r].uid = '25577aea-69db-4509-81dc-b3e44b984447'; u[r].m = ['getReferrerInfo', 'identify', 'integrationsReady', 'on', 'ready', 'track']; u[r].queue = []; u[r].f = function(t) { return function() { var l = Array.prototype.slice.call(arguments); l.unshift(t); u[r].queue.push(l); return u[r].queue; }; }; for (var t = 0; t < u[r].m.length; t++) { l = u[r].m[t]; u[r][l] = u[r].f(l); } a = n.createElement(v); a.src = e + '/us-' + u[r].uid + '.js'; a.async = s; n.getElementsByTagName(i)[0].appendChild(a); })(window, document, 'head', 'script', 'https://cdn.getambassador.com', 'mbsy', true);</script>
 </head>
 <body>
     <header>
         <h1>Member Portal</h1>
         <nav>
-            <a href="/landing_page.html">Landing Page</a>
+            <a href="index.html">Landing Page</a>
         </nav>
     </header>
+    <main>
+        <section>
+            <header>
+                <h4>Profile</h4>
+                <p class="red underline">Edit</p>
+            </header>
+            <ul>
+                <li>
+                    <p>First Name</p>
+                    <p id="first_name">Arthur</p>
+                </li>
+                <li>
+                    <p>Last Name</p>
+                    <p id="last_name">Damato</p>
+                </li>
+                <li>
+                    <p>Email</p>
+                    <p id="email">arthur_cake_bread@getambassador.com</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h4>Password</h4>
+                <p class="red underline">Edit</p>
+            </header>
+            <ul>
+                <li>
+                    <p>Password</p>
+                    <p>**********</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h4>Address Book</h4>
+                <p class="red underline">View</p>
+            </header>
+            <p><strong>Default Address</strong></p>
+            <p id="street">100 Main Street</p>
+            <span id="city">
+                Seattle
+            </span>
+            <span id="state">WA</span>
+            <span id="zip-code">99999</span>
+        </section>
+        <section>
+            <header>
+                <h4>Wine Club</h4>
+                <p class="red underline">Edit</p>
+            </header>
+            <h5>Below Are the wines you are currently subscribed to:</h5>
+            <h5 class="red">Test Club</h5>
+            <p>Pause | Edit | Swap | Cancel</p>
+        </section>
+        <section>
+            <header>
+                <h4>Referral Program</h4>
+            </header>
+            <div id="ambassador-portal"></div>
+        </section>
+    </main>
+    <footer>
+        <address>
+            8300 St Helena Hwy,
+            <br>
+            Rutherfor, CA 94573
+            <br>
+            Open Mon-Sun 10AM-4:30PM
+        </address>
+        <ul>
+            <li>Customer Service</li>
+            <li>Accessibility Statement</li>
+            <li>Tasting Policy</li>
+            <li>Privacy Policy</li>
+            <li>Shipping Policy</li>
+            <li>Contact Us</li>
+            <li>Photo Contest</li>
+            <li>Careers</li>
+            <li>Sitemap</li>
+        </ul>
+        <form>
+            <h2>Stay In Touch</h2>
+            <p>Let's be friends. Subscribe to our newsletter to receive updates on new launches, recipes, playlists, and more.</p>
+            <input type='email' placeholder="Your Email Address" />
+        </form>
+    </footer>
+    <script type="text/javascript">
+        const first_name = document.getElementById('first_name').innerText;
+        const last_name = document.getElementById('last_name').innerText;
+        const email = document.getElementById('email').innerText;
+        const street = document.getElementById('street').innerText;
+        const city = document.getElementById('city').innerText;
+        const state = document.getElementById('state').innerText;
+        const zip = document.getElementById('zip-code').innerText;
+        
+    </script>
 </body>
 </html>
