@@ -72,7 +72,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 5rem;
-    height: 1000px;
+    max-height: 1100px;
 }
 
 section li {
@@ -117,4 +117,11 @@ footer li {
 
 .underline {
     text-decoration: underline;
+}
+
+#ambassador-portal {
+    padding:0;
+    overflow: overlay;
+    min-height: 400px;
+    max-height: 650px;
 }
