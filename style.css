@@ -50,8 +50,8 @@ section > header {
 }
 
 footer {
-    background-color: #833921;
-    color:#fff;
+    background-color: #362524;
+    color:#f4efe5;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -95,7 +95,7 @@ section > p {
 }
 
 input {
-    background-color: #833921;
+    background-color: #362524;
     color: white;
     border: none;
     border-bottom: 2px solid #6c757d;
@@ -158,6 +158,12 @@ span.bottle > img {
     display:inline-block;
     position:absolute;
     left:720px;
-    top:890px;
+    top:910px;
 }
 
+.black {
+    color:#362524;
+    font-family: serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
