@@ -8,10 +8,12 @@ body > header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url('Cakebread-DSC_2693.jpg');
+    background-image: url('./Cakebread Cellars/flowers.jpeg');
     color: #fff;
     height: 500px;
     padding-top:15%;
+    background-size:cover;
+    background-position: center;
 }
 
 body > header > h1 {
@@ -124,4 +126,23 @@ footer li {
     overflow: overlay;
     min-height: 400px;
     max-height: 650px;
+}
+
+span.bottle {
+    margin-right:5px;
+    position: relative;
+    z-index:0;
+    height: 200px;
+    width:230px;
+    background-color: #ebe2de;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+span.bottle > img {
+    position: relative;
+    z-index: 2;
+    top: -30%;
+    left: 7%;
 }
